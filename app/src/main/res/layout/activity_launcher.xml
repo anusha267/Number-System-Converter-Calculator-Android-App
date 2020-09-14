@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Launcher">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="false"
+        android:contentDescription="@string/background"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg_page_001" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginVertical="15dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/buttonColor"
+            android:hapticFeedbackEnabled="true"
+            android:onClick="openConverter"
+            android:padding="10dp"
+            android:shadowColor="#3F51B5"
+            android:text="@string/converter"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginVertical="15dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/buttonColor"
+            android:hapticFeedbackEnabled="true"
+            android:onClick="openCalculator"
+            android:padding="10dp"
+            android:shadowColor="#3F51B5"
+            android:text="@string/calculator"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="-36dp"
+            tools:layout_editor_absoluteY="379dp" />
+
+        <!--<Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginVertical="15dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/buttonColor"
+            android:hapticFeedbackEnabled="true"
+            android:padding="10dp"
+            android:shadowColor="#3F51B5"
+            android:text="@string/learn"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="233dp"
+            tools:visibility="gone" />-->
+
+        <Button
+            android:id="@+id/learn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/buttonColor"
+            android:hapticFeedbackEnabled="true"
+            android:onClick="openChart"
+            android:padding="10dp"
+            android:shadowColor="#3F51B5"
+            android:text="CONVERSION CHART"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="-28dp"
+            tools:layout_editor_absoluteY="304dp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
